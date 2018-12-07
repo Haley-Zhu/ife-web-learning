@@ -1,0 +1,23 @@
+/*
+* @Author: Haley-Zhu
+* @Date:   2018-12-07 18:07:31
+* @Last Modified by:   Haley-Zhu
+* @Last Modified time: 2018-12-07 18:17:01
+*/
+h1 {
+	color: blue;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+p {
+	font-size: 12px;
+	color: yellow;
+	background-color: black;
+}
+
+img {
+	border: 2px solid red;
+}
