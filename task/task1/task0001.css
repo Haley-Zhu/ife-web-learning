@@ -2,7 +2,7 @@
 * @Author: Haley-Zhu
 * @Date:   2018-12-07 18:07:31
 * @Last Modified by:   Haley-Zhu
-* @Last Modified time: 2018-12-09 01:11:22
+* @Last Modified time: 2018-12-11 09:16:59
 */
 h1 {
 	color: blue;
@@ -13,6 +13,9 @@ h2 {
 	font-size: 14px;
 }
 
+div {
+	margin: 0 auto;
+}
 p {
 	font-size: 12px;
 	color: yellow;
@@ -25,19 +28,26 @@ img {
 	border: 2px solid red;
 }
 
-div {
-	background-color: red;
+
+/*6.1*/
+/*用两种方法来实现一个背景色为红色、宽度为960px的<DIV>在浏览器中居中*/
+
+/*div {
 	width: 960px;
 	height: 40px;
+	background-color: yellow;
 	text-align: center;
 	line-height: 40px;
+}*/
+
+div.method1{
+	background-color: blue;
 }
 
 div.method2 {
 	background-color: pink;
 }
 
-/*用两种方法来实现一个背景色为红色、宽度为960px的<DIV>在浏览器中居中*/
 .method1 {
 	position: absolute;
 	margin: auto;
@@ -57,5 +67,42 @@ div.method2 {
 }
 /*end*/
 
+/*6.2*/
 /*有的圆角矩形是复杂图案，无法直接用border-radius，请在不使用border-radius的情况下实现一个可复用的高度和宽度都自适应的圆角矩形 */
+.border_self {
+	margin: 0 auto;
+}
+.b1, .b2, .b3, .b4 {
+	height: 1px;
+}
+.b2 {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.b3, .b4, .mid {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.b1 {
+	margin: 0 5px;
+	background-color: black;
+}
+.b2 {
+	margin: 0 3px;
+}
+
+.b3 {
+	margin: 0 2px;
+}
+.b4 {
+	margin: 0 1px;
+	height: 2px;
+}
+.mid {
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+
 
