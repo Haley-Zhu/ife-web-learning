@@ -2,7 +2,7 @@
 * @Author: Haley-Zhu
 * @Date:   2018-12-07 18:07:31
 * @Last Modified by:   Haley-Zhu
-* @Last Modified time: 2018-12-11 09:16:59
+* @Last Modified time: 2018-12-11 22:54:45
 */
 h1 {
 	color: blue;
@@ -13,9 +13,9 @@ h2 {
 	font-size: 14px;
 }
 
-div {
+/*div {
 	margin: 0 auto;
-}
+}*/
 p {
 	font-size: 12px;
 	color: yellow;
@@ -63,7 +63,7 @@ div.method2 {
 	top: 50%;
 	margin-left: -480px;
 	margin-top: -20px;
-	/*transform: translate(-50%,-50%);*/
+	/*transform: translate(-50%,-50%);      -----方法2*/
 }
 /*end*/
 
@@ -103,6 +103,38 @@ div.method2 {
 	text-align: center;
 	line-height: 40px;
 }
+/*end*/
+
+/*6.3*/
+/*用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化 */
+/*method1*/
+.left-fix1 {
+	float: left;
+	background-color: yellow;
+	height: 50px;
+	width: 400px;
+}
+.right-auto1 {
+	margin-left: 400px;
+	background-color: pink;
+	height: 50px;
+	width: auto;
+}
+/*method2*/
+.left-fix2 {
+	float: left;
+	background-color: yellow;
+	height: 50px;
+	width: 400px;
+}
+.right-auto2 {
+	float: left;
+	background-color: pink;
+	height: 50px;
+	width: calc(100% - 400px);
+}
+
+
 
 
 
