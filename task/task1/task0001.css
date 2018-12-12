@@ -2,7 +2,7 @@
 * @Author: Haley-Zhu
 * @Date:   2018-12-07 18:07:31
 * @Last Modified by:   Haley-Zhu
-* @Last Modified time: 2018-12-11 22:54:45
+* @Last Modified time: 2018-12-12 21:54:26
 */
 h1 {
 	color: blue;
@@ -26,6 +26,14 @@ p {
 
 img {
 	border: 2px solid red;
+}
+
+.clearfix:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	visibility:hidden; 
+	clear:both; 
 }
 
 
@@ -133,6 +141,73 @@ div.method2 {
 	height: 50px;
 	width: calc(100% - 400px);
 }
+/*end*/
+
+/*6.4*/
+/*用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化*/
+/*method1*/
+.left64 {
+	float: left;
+	height: 50px;
+	width: 200px;
+	background-color: red;
+}
+.mid64 {
+	float: left;
+	height: 50px;
+	width: calc(100% - 400px);
+	background-color: green;
+}
+.right64 {
+	float: right;
+	height: 50px;
+	width: 200px;
+	background-color: red;
+}
+
+/*method2*/
+.box642 {
+	position: relative;
+	width: 100%;
+}
+.left642 {
+	position: absolute;
+	height: 50px;
+	width: 200px;
+	background-color: blue;
+}
+.mid642 {
+	position: absolute;
+	left: 200px;
+	height: 50px;
+	width: calc(100% - 400px);
+	background-color: grey;
+}
+.right642 {
+	position: absolute;
+	right: 0;
+	height: 50px;
+	width: 200px;
+	background-color: blue;
+}
+/*end*/
+
+/*6.5*/
+/*实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化 */
+.box65 {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	overflow: hidden;
+}
+.blue-box {
+	float: left;
+	width: 60px;
+	height: 40px;
+	background-color: blue;
+	margin: 10px;
+}
+
 
 
 
